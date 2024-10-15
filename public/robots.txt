@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://brandable.pe/sitemap.xml
