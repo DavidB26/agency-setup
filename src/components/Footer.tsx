@@ -1,4 +1,5 @@
 //Assets
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import LogoOpt from "../assets/logo.webp";
 
@@ -35,7 +36,7 @@ function Footer() {
             <ul className='flex flex-col gap-6'>
               {navigation.map((item, index) => (
                 <li key={index} className='text-sm font-bold uppercase'>
-                  <a href={item.url}>{item.name}</a>
+                  <Link to={item.url} >{item.name}</Link>
                 </li>
               ))}
             </ul>

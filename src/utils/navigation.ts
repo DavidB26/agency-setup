@@ -1,22 +1,23 @@
 export const navigation = [
   {
-    name: 'Inicio',
-    url: '#'
-  },
-  {
     name: 'Servicios',
-    url: '#services'
+    url: '/#services'
   },
   {
     name: 'Sobre nosotros',
-    url: '#about'
+    url: '/#about'
   },
   {
     name: 'Por qué nosotros',
-    url: '#why-us'
+    url: '/#why-us'
+  },
+  {
+    name: 'Proyectos',
+    blank: true,
+    url: 'proyectos'
   },
   {
     name: 'Contacto',
-    url: '#contact'
+    url: '/#contact'
   }
 ]

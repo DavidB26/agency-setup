@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import { navigation } from "../../../../utils/navigation";
+import { Link } from "react-router-dom";
 
 interface NavbarProps {
   active: boolean;
@@ -20,12 +21,15 @@ function Navbar({ active, handleChange }: NavbarProps) {
             className='font-semibold uppercase lg:py-4 text-slate-900 lg:text-white lg:px-6 active:scale-95'
             key={index}
           >
-            <a
-              href={item.url}
-              onClick={handleChange}
-            >
-              {item.name}
-            </a>
+            {item.blank ? (
+              <Link to={item.url} onClick={handleChange}>
+                {item.name}
+              </Link>
+            ) : (
+              <a href={item.url} onClick={handleChange}>
+                {item.name}
+              </a>
+            )}
           </li>
         ))}
       </ol>
